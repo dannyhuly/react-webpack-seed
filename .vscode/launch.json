@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Dev (Debug Chrome)",
+            "url": "http://localhost:8081",
+            "webRoot": "${workspaceRoot}/src",
+            "sourceMaps": true,
+            "trace": true,
+        },
+        {
+            "type": "chrome",
+            "request": "attach",
+            "name": "Unit (Attach Karma Chrome)",
+            "address": "localhost",
+            "port": 9333, // `--remote-debugging-port=9333' in karma.conf.js
+            "pathMapping": {
+                "/": "${workspaceRoot}/",
+                "/base/": "${workspaceRoot}/src"
+            }
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "webpack-jsx-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "webpack-dev-server --config ./webpack.config.js --watch true --devtool source-map --mode development",
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "unit": "karma start ./karma.conf.js",
+    "unit:debug": "karma start ./karma.conf.js --single-run false --browsers ChromeDebugging"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "html-webpack-plugin": "^3.2.0",
+    "istanbul-instrumenter-loader": "^3.0.1",
+    "jasmine": "^3.1.0",
+    "karma": "^2.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-cli": "^1.0.1",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.1.1",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^3.0.0",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-dev-server": "^3.1.3"
+  },
+  "dependencies": {
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1"
+  }
+}
